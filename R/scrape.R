@@ -39,8 +39,8 @@ https://www2.ed.gov/admins/lead/account/stateplan17/nvcsa2017.docx
 state_links <- tibble(abbr = state_abbr) %>%
   mutate(pdf_link = str_c(url_pt1, abbr, url_pt2), 
          alt_link = str_c(url_pt1, abbr, url_pt2b),
-         file_name = str_c("data/", abbr, "_plan.pdf"),
-         alt_file_name = str_c("data/", abbr, "_plan.docx"))
+         file_name = str_c("docs/", abbr, "_plan.pdf"),
+         alt_file_name = str_c("docs/", abbr, "_plan.docx"))
 
 # download pdfs of state essa plans
 for(i in seq_along(1:length(state_abbr))){
